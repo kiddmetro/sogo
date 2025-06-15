@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>SOSO</title>
+</head>
+
+<body>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm py-3">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold text-dark" href="#">SOGO</a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon" style="transform: scale(0.8);"></span>
+                </button>
+
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left Nav Links (desktop) / Centered (mobile) -->
+                    <ul
+                        class="navbar-nav me-auto ms-3 text-center text-lg-start w-100 justify-content-lg-start justify-content-center gap-3">
+                        <!-- Products -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark d-flex align-items-center gap-1 justify-content-center justify-content-lg-start"
+                                href="#" role="button" data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                <li><a class="dropdown-item" href="#">Product 3</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Business Solutions -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark d-flex align-items-center gap-1 justify-content-center justify-content-lg-start"
+                                href="#" role="button" data-bs-toggle="dropdown">
+                                Business Solutions
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Solution 1</a></li>
+                                <li><a class="dropdown-item" href="#">Solution 2</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Help Center -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark d-flex align-items-center gap-1 justify-content-center justify-content-lg-start"
+                                href="#" role="button" data-bs-toggle="dropdown">
+                                Help Center
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Support</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pricing -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Pricing</a>
+                        </li>
+
+                        <!-- Login + Download centered on mobile -->
+                        <li class="nav-item d-lg-none">
+                            <a href="#" class="nav-link text-primary fw-semibold">Log In</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a href="#download" class="btn btn-primary w-100">Download</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right Side: Log In & Download for desktop only -->
+                    <div class="d-none d-lg-flex align-items-center ms-auto">
+                        <a href="#" class="text-primary text-decoration-none fw-semibold me-3"
+                            style="white-space: nowrap;">Log In</a>
+                        <a href="#download" class="btn btn-primary px-4">Download</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <section class="hero-section py-5 m-3 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Image (first on mobile) -->
+                    <div class="col-lg-6 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                        <img src="img/sogo-hero-mockup.png" alt="Sogo App Mockup" class="img-fluid hero-image">
+                    </div>
+                    <!-- Text (second on mobile) -->
+                    <div class="col-lg-6 hero-text order-2 order-lg-1">
+                        <h1 class="fw-bold mb-3 display-4">Discover the new SOGO app</h1>
+                        <p class="text-muted mb-4">
+                            Experience seamless productivity with our innovative mobile application. Streamline your
+                            workflow, manage tasks efficiently, and stay connected with your team anywhere, anytime.
+                        </p>
+                        <div class="d-flex flex-row btn-container">
+                            <a href="#" class="btn btn-primary btn-sm btn-custom">Get Started</a>
+                            <a href="#" class="btn btn-watch-video btn-sm ">
+                                <i class="bi bi-play-circle-fill fs-5"></i> Watch Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features py-5" style="background-color: #f8fafc;">
+            <div class="container">
+                <div class="features-grid d-flex flex-column flex-md-row gap-4 justify-content-center">
+
+                    <!-- Feature 1 -->
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-folder-fill text-white p-3 fs-2 rounded-circle"
+                                style="background-color: #3b82f6;"></i>
+                        </div>
+                        <h3 class="h5 fw-semibold">Analytics Dashboard</h3>
+                        <p class="text-muted small">
+                            Get comprehensive insights into your business performance with our advanced analytics and
+                            reporting tools.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-folder-fill text-white p-3 fs-2 rounded-circle"
+                                style="background-color: #10b981;"></i>
+                        </div>
+                        <h3 class="h5 fw-semibold">Goal Tracking</h3>
+                        <p class="text-muted small">
+                            Set, monitor, and achieve your objectives with our intelligent goal tracking and progress
+                            monitoring system.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-folder-fill text-white p-3 fs-2 rounded-circle"
+                                style="background-color: #f59e0b;"></i>
+                        </div>
+                        <h3 class="h5 fw-semibold">Team Collaboration</h3>
+                        <p class="text-muted small">
+                            Enhance teamwork with real-time collaboration features, shared workspaces, and seamless
+                            communication tools.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Essential Tools Section -->
+        <section class="py-5" style="background-color: #f8fafc;">
+            <div class="container ">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold">All the essential tools</h1>
+                    <p class="text-muted">Everything you need to manage your business efficiently in one powerful
+                        application.</p>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row align-items-center mx-3">
+
+                    <!-- Left: Phone Mockup -->
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <div class="p-3 bg-warning rounded-4" style="max-width: 250px; margin: 0 auto;">
+                            <div class="d-flex justify-content-between text-white fw-bold px-3 py-2">
+                                <span>9:41</span>
+                                <span>●●●</span>
+                            </div>
+                            <div class="p-3">
+                                <div
+                                    style="height: 60px; background: #1f2937; border-radius: 8px; margin-bottom: 15px;">
+                                </div>
+                                <div style="height: 20px; background: #f3f4f6; border-radius: 4px; margin-bottom: 8px;">
+                                </div>
+                                <div style="height: 20px; background: #f3f4f6; border-radius: 4px; width: 80%;"></div>
+                            </div>
+                        </div>
+                        <!-- <img src="img/sogo-hero-mockup.png" alt="" class="img-fluid hero-image"> -->
+                    </div>
+
+                    <!-- Middle Divider -->
+                    <div class="col-lg-2 d-none d-lg-flex justify-content-center align-items-center flex-column">
+                        <!-- Blue vertical line -->
+                        <div style="width: 4px; height: 100px; background-color: #3b82f6; border-radius: 2px;"></div>
+
+                        <!-- Spacing -->
+                        <div class="my-3"></div>
+
+                        <!-- Two short horizontal gray lines -->
+                        <div
+                            style="width: 4px; height: 40px; background-color: #d1d5db; border-radius: 4px; margin-bottom: 6px;">
+                        </div>
+                        <div style="width: 4px; height: 40px; background-color: #d1d5db; border-radius: 4px;"></div>
+                    </div>
+
+                    <!-- Right: Text & List -->
+                    <div class="col-lg-5  ">
+                        <h3 class="fw-semibold mb-3">Comprehensive Feature Set</h3>
+                        <p class="text-muted mb-4">
+                            Our platform provides all the tools you need to streamline your workflow and boost
+                            productivity.
+                        </p>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-4">✔️ Advanced project management</li>
+                            <li class="mb-4">✔️ Real-time collaboration tools</li>
+                            <li class="mb-4">✔️ Automated workflow processes</li>
+                            <li class="mb-4">✔️ Comprehensive reporting suite</li>
+                            <li class="mb-4">✔️ Mobile-first design approach</li>
+                            <li class="mb-4">✔️ Enterprise-grade security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Essential Focus Section -->
+        <section class="py-5" style="background-color: #f8fafc;">
+            <div class="container ">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold">Focus on what matters</h1>
+                    <p class="text-muted">Let our intelligent automation handle the routine tasks while you focus on
+                        growing your business.</p>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row align-items-center mx-3">
+
+                    <!-- Left: Phone Mockup -->
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <div class="p-3 bg-warning rounded-4" style="max-width: 250px; margin: 0 auto;">
+                            <div class="d-flex justify-content-between text-white fw-bold px-3 py-2">
+                                <span>9:41</span>
+                                <span>●●●</span>
+                            </div>
+                            <div class="p-3">
+                                <div
+                                    style="height: 60px; background: #1f2937; border-radius: 8px; margin-bottom: 15px;">
+                                </div>
+                                <div style="height: 20px; background: #f3f4f6; border-radius: 4px; margin-bottom: 8px;">
+                                </div>
+                                <div style="height: 20px; background: #f3f4f6; border-radius: 4px; width: 80%;"></div>
+                            </div>
+                        </div>
+                        <!-- <img src="img/sogo-hero-mockup.png" alt="" class="img-fluid hero-image"> -->
+                    </div>
+
+                    <!-- Middle Divider -->
+                    <div class="col-lg-2 d-none d-lg-flex justify-content-center align-items-center flex-column">
+                        <!-- Blue vertical line -->
+                        <div style="width: 4px; height: 100px; background-color: #3b82f6; border-radius: 2px;"></div>
+
+                        <!-- Spacing -->
+                        <div class="my-3"></div>
+
+                        <!-- Two short horizontal gray lines -->
+                        <div
+                            style="width: 4px; height: 40px; background-color: #d1d5db; border-radius: 4px; margin-bottom: 6px;">
+                        </div>
+                        <div style="width: 4px; height: 40px; background-color: #d1d5db; border-radius: 4px;"></div>
+                    </div>
+
+                    <!-- Right: Text & List -->
+                    <div class="col-lg-5">
+                        <h3 class="fw-semibold mb-3">Comprehensive Feature Set</h3>
+                        <p class="text-muted mb-4">
+                            Our platform provides all the tools you need to streamline your workflow and boost
+                            productivity.
+                        </p>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-4">✔️ Advanced project management</li>
+                            <li class="mb-4">✔️ Real-time collaboration tools</li>
+                            <li class="mb-4">✔️ Automated workflow processes</li>
+                            <li class="mb-4">✔️ Comprehensive reporting suite</li>
+                            <li class="mb-4">✔️ Mobile-first design approach</li>
+                            <li class="mb-4">✔️ Enterprise-grade security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Get Started Button -->
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary px-4 py-3 fw-semibold">Get Started</a>
+            </div>
+        </section>
+
+
+        <section class="testimonial-section py-5"
+            style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+            <div class="container position-relative">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Slide -->
+                        <div class="carousel-item active">
+                            <div class="row align-items-center text-center text-md-start">
+                                <div class="col-md-5 d-flex justify-content-center">
+                                    <img src="img/main-image.jpg" class="img-fluid rounded" style="max-width: 300px;"
+                                        alt="Testimonial">
+                                </div>
+                                <div class="col-md-7">
+                                    <h6 class="text-uppercase text-muted fw-bold">Success Stories</h6>
+                                    <p class="fs-5 fst-italic">
+                                        <q>Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu mattis est velit
+                                            in. Nibh in purus sit convallis phasellus ut. At vel erat ultricies commodo.
+                                            Neque suspendisse a habitasse commodo.</q>
+                                    </p>
+                                    <p class="fw-bold mb-3">Marie Poirot, <span class="text-muted">Bigapp</span></p>
+
+                                    <!-- Indicators -->
+                                    <div class="carousel-indicators position-static justify-content-center mt-3">
+                                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                                            class="active bg-primary rounded-circle" style="width: 10px; height: 10px;"
+                                            aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                                            class="bg-secondary rounded-circle" style="width: 10px; height: 10px;"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                                            class="bg-secondary rounded-circle" style="width: 10px; height: 10px;"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more .carousel-item here -->
+
+                    </div>
+
+                    <!-- Prev Arrow -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev" style="width: auto;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"
+                            style="filter: invert(1); width: 2rem; height: 2rem;"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <!-- Next Arrow -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next" style="width: auto;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="filter: invert(1); width: 2rem; height: 2rem;"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq py-5" style="background: #f8fafc;">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Answers to your questions</h2>
+                <div class="faq-list">
+
+                    <!-- FAQ Item -->
+                    <div class="faq-item border-bottom py-3">
+                        <div class="faq-question d-flex justify-content-between align-items-center cursor-pointer">
+                            <span>How do you ensure data security and privacy with your mobile app?</span>
+                            <span class="faq-toggle fw-bold">+</span>
+                        </div>
+                        <div class="faq-answer mt-2" style="display: none;">
+                            <p class="text-muted">We implement enterprise-grade security measures including end-to-end
+                                encryption, secure data storage, and regular security audits to protect your
+                                information.</p>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for more questions -->
+                    <div class="faq-item border-bottom py-3">
+                        <div class="faq-question d-flex justify-content-between align-items-center cursor-pointer">
+                            <span>What integrations are available with third-party tools and platforms?</span>
+                            <span class="faq-toggle fw-bold">+</span>
+                        </div>
+                        <div class="faq-answer mt-2" style="display: none;">
+                            <p class="text-muted">Our platform integrates seamlessly with popular tools like Slack,
+                                Microsoft Teams, Google Workspace, Salesforce, and many more through our open API.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border-bottom py-3">
+                        <div class="faq-question d-flex justify-content-between align-items-center cursor-pointer">
+                            <span>Can multiple team members collaborate on projects using the same account?</span>
+                            <span class="faq-toggle fw-bold">+</span>
+                        </div>
+                        <div class="faq-answer mt-2" style="display: none;">
+                            <p class="text-muted">Yes, our platform supports multi-user collaboration with role-based
+                                permissions...</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border-bottom py-3">
+                        <div class="faq-question d-flex justify-content-between align-items-center cursor-pointer">
+                            <span>Is customer support available 24/7 for technical assistance?</span>
+                            <span class="faq-toggle fw-bold">+</span>
+                        </div>
+                        <div class="faq-answer mt-2" style="display: none;">
+                            <p class="text-muted">Yes, we provide 24/7 customer support through multiple channels...</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item py-3">
+                        <div class="faq-question d-flex justify-content-between align-items-center cursor-pointer">
+                            <span>What are the system requirements for optimal app performance?</span>
+                            <span class="faq-toggle fw-bold">+</span>
+                        </div>
+                        <div class="faq-answer mt-2" style="display: none;">
+                            <p class="text-muted">Our app is optimized to run on iOS 12+ and Android 8+...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Download Section -->
+        <section class="download-section py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-3 text-dark">Ready to transform your mobile experience?</h2>
+                <p class="mb-4 text-secondary">
+                    Join millions of users who have already discovered the power of SOGO. Download now and experience
+                    the future of mobile apps.
+                </p>
+
+                <div class="d-flex justify-content-center flex-wrap gap-3 mb-3">
+                    <a href="#" class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2 rounded">
+                        <i class="bi bi-apple fs-4"></i> Download for iOS
+                    </a>
+                    <a href="#" class="btn btn-outline-dark d-flex align-items-center gap-2 px-4 py-2 rounded">
+                        <i class="bi bi-google-play fs-5"></i> Download for Android
+                    </a>
+                </div>
+
+                <small class="text-muted">
+                    Available on iPhone, iPad, Android phones and tablets
+                </small>
+            </div>
+        </section>
+
+
+     <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h5>Company Info</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Fast Links</h5>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">GDPR</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SOGO. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+        <!-- Bootstrap JS Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
